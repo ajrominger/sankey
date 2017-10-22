@@ -1,6 +1,6 @@
 Package: sankey
 Title: Illustrate the Flow of Information or Material
-Version: 1.0.1
+Version: 1.0.2
 Author: Gábor Csárdi, January Weiner
 Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
 Description: Plots that illustrate the flow of information or material.
