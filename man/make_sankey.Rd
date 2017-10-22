@@ -77,4 +77,3 @@ Current list of graphical parameters for edges:
   \item \code{weight} Edge weight. Determines the width of the edges.
 }
 }
-
