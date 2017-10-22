@@ -9,6 +9,7 @@ LazyData: true
 URL: https://github.com/gaborcsardi/sankey#readme
 BugReports: https://github.com/gaborcsardi/sankey/issues
 Suggests:
+    mockery,
     testthat
 Imports:
     simplegraph,
