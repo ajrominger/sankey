@@ -6,11 +6,11 @@
 > Sankey Diagrams
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Linux Build Status](https://travis-ci.org/MangoTheCat/sankey.svg?branch=master)](https://travis-ci.org/MangoTheCat/sankey)
-[![Windows Build status](https://ci.appveyor.com/api/projects/status/github/MangoTheCat/sankey?svg=true)](https://ci.appveyor.com/project/gaborcsardi/sankey)
+[![Linux Build Status](https://travis-ci.org/gaborcsardi/sankey.svg?branch=master)](https://travis-ci.org/gaborcsardi/sankey)
+[![Windows Build status](https://ci.appveyor.com/api/projects/status/github/gaborcsardi/sankey?svg=true)](https://ci.appveyor.com/project/gaborcsardi/sankey)
 [![](http://www.r-pkg.org/badges/version/sankey)](http://www.r-pkg.org/pkg/sankey)
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/sankey)](http://www.r-pkg.org/pkg/sankey)
-[![Coverage Status](https://img.shields.io/codecov/c/github/MangoTheCat/sankey/master.svg)](https://codecov.io/github/MangoTheCat/sankey?branch=master)
+[![Coverage Status](https://img.shields.io/codecov/c/github/gaborcsardi/sankey/master.svg)](https://codecov.io/github/gaborcsardi/sankey?branch=master)
 
 Sankey plots illustrate the flow of information or material.
 
@@ -18,7 +18,7 @@ Sankey plots illustrate the flow of information or material.
 
 
 ```r
-devtools::install_github("mangothecat/sankey")
+devtools::install_github("gaborcsardi/sankey")
 ```
 
 ## Usage
@@ -65,7 +65,7 @@ pkgsnap_sankey <- make_sankey(edges = edges)
 sankey(pkgsnap_sankey)
 ```
 
-![plot of chunk unnamed-chunk-3](inst/figure/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](inst/figure/unnamed-chunk-3-1.png)
 
 ## Customization
 
@@ -120,11 +120,12 @@ edges$colorstyle <- "gradient"
 sankey(make_sankey(nodes, edges))
 ```
 
-![plot of chunk unnamed-chunk-4](inst/figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](inst/figure/unnamed-chunk-4-1.png)
 
 We colored the nodes of the exported functions orange, and also added
 a color gradient along the edges.
 
 ## License
 
-GPL (>= 2) © [Mango Solutions](https://github.com/mangothecat), January Weiner
+GPL (>= 2) © [Mango Solutions](https://github.com/mangothecat),
+  January Weiner, [Gábor Csárdi](https://github.com/gaborcsardi)
