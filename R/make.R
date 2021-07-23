@@ -99,7 +99,7 @@
 #'
 #' sankey(make_sankey(nodes, edges))
 
-make_sankey <- function(
+makeSankey <- function(
   nodes = NULL, edges, y = c("optimal", "simple"), break_edges = FALSE,
   gravity = c("center", "top", "bottom")) {
 
