@@ -2,7 +2,7 @@
 #' @importFrom graphics lines polygon
 
 curveseg <- function(x0, x1, y0, y1, width = 1, nsteps = 50,
-                     colorstyle, col = "#ffcc0066", grad = NULL, lty = 1,
+                     colorstyle, col = "#00000080", grad = NULL, lty = 1,
                      curvestyle = c("sin", "line")) {
 
   curvestyle <- match.arg(curvestyle)
@@ -27,14 +27,16 @@ curveseg <- function(x0, x1, y0, y1, width = 1, nsteps = 50,
     yy <- seq(y0, y1, length.out = nsteps)
   }
 
-  for(i in 1:(nsteps-1) ) {
-    polygon(
-      c(xx[i], xx[i + 1], xx[i + 1], xx[i] ),
-      c(yy[i], yy[i + 1], yy[i + 1] + w, yy[i] + w ),
-      col = grad[i], border = grad[i]
-    )
+  polygon(c(xx, rev(xx)), c(yy, rev(yy) + w), col = col, border = NA)
 
-    lines(c(xx[i], xx[i + 1]), c(yy[i], yy[i + 1]), lty = lty, col=grad[i])
-    lines(c(xx[i], xx[i + 1]), c(yy[i] + w, yy[i + 1] + w ), lty = lty, col=grad[i])
-  }
+  # for(i in 1:(nsteps-1) ) {
+  #   polygon(
+  #     c(xx[i], xx[i + 1], xx[i + 1], xx[i] ),
+  #     c(yy[i], yy[i + 1], yy[i + 1] + w, yy[i] + w ),
+  #     col = grad[i], border = grad[i]
+  #   )
+  #
+  #   lines(c(xx[i], xx[i + 1]), c(yy[i], yy[i + 1]), lty = lty, col=grad[i])
+  #   lines(c(xx[i], xx[i + 1]), c(yy[i] + w, yy[i + 1] + w ), lty = lty, col=grad[i])
+  # }
 }
