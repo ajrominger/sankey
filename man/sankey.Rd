@@ -3,9 +3,7 @@
 \docType{package}
 \name{sankey}
 \alias{sankey}
-\alias{sankey-package}
 \alias{plot.sankey}
-\alias{sankey}
 \title{Sankey Diagrams}
 \usage{
 \method{plot}{sankey}(x, ...)
@@ -25,6 +23,4 @@ Nothing.
 }
 \description{
 Sankey plots illustrate the flow of information or material.
-
-Draw a sankey plot
 }
