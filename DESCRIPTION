@@ -1,13 +1,12 @@
 Package: simpleSankey
 Title: Illustrate the Flow of Information or Material
 Version: 1.0.2
-Author: Gábor Csárdi, January Weiner
-Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
+Author: Gábor Csárdi, January Weiner, Andy Rominger
+Maintainer: Andy Rominger <andrew.rominger@maine.edu>
 Description: Plots that illustrate the flow of information or material.
 License: GPL (>= 2)
 LazyData: true
-URL: https://github.com/gaborcsardi/sankey#readme
-BugReports: https://github.com/gaborcsardi/sankey/issues
+URL: https://github.com/ajrominger/simpleSankey
 Suggests:
     covr,
     mockery,
